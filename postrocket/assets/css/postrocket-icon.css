@@ -1,0 +1,23 @@
+/**
+ * PostRocket Icon Styles
+ */
+
+/* Admin Menu Icon */
+#adminmenu .toplevel_page_postrocket .wp-menu-image:before {
+    content: '\f463';
+}
+
+/* Custom Icons */
+.postrocket-icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.postrocket-icon-rocket {
+    background-image: url('../images/rocket-icon.svg');
+}
