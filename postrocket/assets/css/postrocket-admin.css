@@ -1,0 +1,535 @@
+/**
+ * PostRocket Admin Styles
+ */
+
+/* General Styles */
+.postrocket-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.postrocket-card h2 {
+    border-bottom: 1px solid #eee;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+/* Dashboard Styles */
+.postrocket-dashboard-header {
+    margin-bottom: 20px;
+}
+
+.postrocket-stats-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.postrocket-stats-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex: 1 1 calc(20% - 15px);
+    min-width: 200px;
+    overflow: hidden;
+}
+
+.postrocket-stats-card-content {
+    flex: 1;
+    padding: 15px;
+}
+
+.postrocket-stats-card-content h2 {
+    border: none;
+    color: #23282d;
+    font-size: 24px;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.postrocket-stats-card-content p {
+    color: #72777c;
+    font-size: 14px;
+    margin: 0;
+}
+
+.postrocket-stats-card-icon {
+    align-items: center;
+    background: #2271b1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 60px;
+}
+
+.postrocket-stats-card-icon .dashicons {
+    font-size: 28px;
+    height: 28px;
+    width: 28px;
+}
+
+.postrocket-dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.postrocket-dashboard-column {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 300px;
+}
+
+.postrocket-chart-container {
+    height: 300px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.postrocket-no-data {
+    color: #72777c;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Table Styles */
+.postrocket-table-responsive {
+    overflow-x: auto;
+}
+
+.postrocket-table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.postrocket-table th {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+    padding: 10px;
+    text-align: left;
+}
+
+.postrocket-table td {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+.postrocket-table tr:hover td {
+    background-color: #f9f9f9;
+}
+
+/* Form Styles */
+.postrocket-form {
+    margin-top: 15px;
+}
+
+.postrocket-form-section {
+    margin-bottom: 25px;
+}
+
+.postrocket-form-section h3 {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.postrocket-form-row {
+    margin-bottom: 15px;
+}
+
+.postrocket-form-row label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.postrocket-form-row input[type="text"],
+.postrocket-form-row input[type="password"],
+.postrocket-form-row select,
+.postrocket-form-row textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+    color: #32373c;
+    line-height: 1.4;
+    margin: 0;
+    min-height: 30px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.postrocket-form-row select {
+    max-width: 400px;
+}
+
+.postrocket-form-help {
+    color: #72777c;
+    font-size: 13px;
+    font-style: italic;
+    margin: 5px 0 0;
+}
+
+.postrocket-radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.postrocket-radio-group label {
+    font-weight: normal;
+}
+
+.postrocket-form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Background Processing Styles */
+.postrocket-status-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.postrocket-status-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex: 1 1 calc(25% - 15px);
+    min-width: 200px;
+    overflow: hidden;
+}
+
+.postrocket-status-card-content {
+    flex: 1;
+    padding: 15px;
+}
+
+.postrocket-status-card-content h2 {
+    border: none;
+    color: #23282d;
+    font-size: 24px;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.postrocket-status-card-content p {
+    color: #72777c;
+    font-size: 14px;
+    margin: 0;
+}
+
+.postrocket-status-card-icon {
+    align-items: center;
+    background: #2271b1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 60px;
+}
+
+.postrocket-status-card-icon.postrocket-status-pending {
+    background: #f0c33c;
+}
+
+.postrocket-status-card-icon.postrocket-status-processing {
+    background: #3498db;
+}
+
+.postrocket-status-card-icon.postrocket-status-completed {
+    background: #2ecc71;
+}
+
+.postrocket-status-card-icon .dashicons {
+    font-size: 28px;
+    height: 28px;
+    width: 28px;
+}
+
+.postrocket-progress-container {
+    margin: 20px 0;
+}
+
+.postrocket-progress {
+    background-color: #eee;
+    border-radius: 4px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.postrocket-progress-bar {
+    background-color: #2271b1;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.postrocket-progress-text {
+    color: #666;
+    font-size: 13px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.postrocket-current-task {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.postrocket-current-task h3 {
+    margin-top: 0;
+}
+
+.postrocket-processing-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.postrocket-status-badge {
+    background: #eee;
+    border-radius: 3px;
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 8px;
+}
+
+.postrocket-status-badge.postrocket-status-pending {
+    background: #f0c33c;
+    color: #fff;
+}
+
+.postrocket-status-badge.postrocket-status-processing {
+    background: #3498db;
+    color: #fff;
+}
+
+.postrocket-status-badge.postrocket-status-completed {
+    background: #2ecc71;
+    color: #fff;
+}
+
+.postrocket-task-row.postrocket-status-processing {
+    background-color: #f0f8ff;
+}
+
+/* Modal Styles */
+.postrocket-modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    display: none;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.postrocket-modal-content {
+    background-color: #fefefe;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10% auto;
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+}
+
+.postrocket-modal-close {
+    color: #aaa;
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.postrocket-modal-close:hover {
+    color: black;
+}
+
+.postrocket-locations-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.postrocket-locations-list ul {
+    columns: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.postrocket-locations-list li {
+    break-inside: avoid;
+    list-style-type: none;
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.postrocket-locations-list li::before {
+    color: #2271b1;
+    content: "•";
+    font-size: 18px;
+    left: 0;
+    position: absolute;
+}
+
+/* Help & Support Styles */
+.postrocket-help-section {
+    margin-bottom: 20px;
+}
+
+.postrocket-faq-item {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.postrocket-faq-item h3 {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 0;
+    position: relative;
+}
+
+.postrocket-faq-item h3::after {
+    content: "+";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.postrocket-faq-item h3.active::after {
+    content: "-";
+}
+
+.postrocket-faq-answer {
+    display: none;
+    padding: 0 0 10px;
+}
+
+/* Spinner */
+.postrocket-spinner {
+    background: url(../images/spinner.gif) no-repeat;
+    background-size: 20px 20px;
+    display: inline-block;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.postrocket-result {
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 782px) {
+    .postrocket-stats-card,
+    .postrocket-status-card {
+        flex: 1 1 100%;
+    }
+    
+    .postrocket-dashboard-column {
+        flex: 1 1 100%;
+    }
+    
+    .postrocket-radio-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .postrocket-locations-list ul {
+        columns: 1;
+    }
+}
+
+/* Dark Mode Support */
+.admin-color-dark .postrocket-card,
+.admin-color-modern .postrocket-card {
+    background: #2c3338;
+    color: #bbc8d4;
+}
+
+.admin-color-dark .postrocket-card h2,
+.admin-color-modern .postrocket-card h2 {
+    border-color: #3c434a;
+    color: #e2e4e7;
+}
+
+.admin-color-dark .postrocket-stats-card,
+.admin-color-dark .postrocket-status-card,
+.admin-color-modern .postrocket-stats-card,
+.admin-color-modern .postrocket-status-card {
+    background: #2c3338;
+}
+
+.admin-color-dark .postrocket-stats-card-content h2,
+.admin-color-dark .postrocket-status-card-content h2,
+.admin-color-modern .postrocket-stats-card-content h2,
+.admin-color-modern .postrocket-status-card-content h2 {
+    color: #e2e4e7;
+}
+
+.admin-color-dark .postrocket-stats-card-content p,
+.admin-color-dark .postrocket-status-card-content p,
+.admin-color-modern .postrocket-stats-card-content p,
+.admin-color-modern .postrocket-status-card-content p {
+    color: #bbc8d4;
+}
+
+.admin-color-dark .postrocket-table th,
+.admin-color-modern .postrocket-table th {
+    background-color: #1d2327;
+    border-color: #3c434a;
+}
+
+.admin-color-dark .postrocket-table td,
+.admin-color-modern .postrocket-table td {
+    border-color: #3c434a;
+}
+
+.admin-color-dark .postrocket-table tr:hover td,
+.admin-color-modern .postrocket-table tr:hover td {
+    background-color: #2c3338;
+}
+
+.admin-color-dark .postrocket-current-task,
+.admin-color-modern .postrocket-current-task {
+    background-color: #1d2327;
+}
+
+.admin-color-dark .postrocket-progress,
+.admin-color-modern .postrocket-progress {
+    background-color: #1d2327;
+}
+
+.admin-color-dark .postrocket-form-help,
+.admin-color-modern .postrocket-form-help {
+    color: #bbc8d4;
+}
+
+.admin-color-dark .postrocket-modal-content,
+.admin-color-modern .postrocket-modal-content {
+    background-color: #2c3338;
+    color: #bbc8d4;
+}
+
+.admin-color-dark .postrocket-task-row.postrocket-status-processing,
+.admin-color-modern .postrocket-task-row.postrocket-status-processing {
+    background-color: #1a3c5a;
+}
